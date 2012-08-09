@@ -22,6 +22,8 @@ application/config/user_agents.php
 application/controllers/index.html
 application/controllers/examples2.php
 application/controllers/welcome.php
+application/controllers/auth.php
+application/controllers/main.php
 application/core/
 application/errors/
 application/helpers/
@@ -31,8 +33,12 @@ application/language/
 application/libraries/index.html
 application/logs/
 application/models/index.html
+application/models/mod_auth.php
+application/models/mod_facturas.php
 application/third_party/
 application/views/index.html
 application/views/welcome_message.php
+application/views/login.php
+application/views/template/
 index.php
 license.txt

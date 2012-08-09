@@ -106,10 +106,13 @@ class Examples extends CI_Controller {
 	{
 			$crud = new grocery_CRUD();
 
-			$crud->set_table('products');
-			$crud->set_subject('Product');
-			$crud->unset_columns('productDescription');
-			$crud->callback_column('buyPrice',array($this,'valueToEuro'));
+
+			$crud->set_table('articulosyserv');
+			$crud->set_subject('Producto');
+			$crud->unset_columns(array('tipo', 'borrado','Espaquete','Codpaquete','CodOferta','ActInventario'));
+
+			$crud->set_relation('codFamilia','familias','nombre');
+			//$crud->callback_column('buyPrice',array($this,'valueToEuro'));
 			
 			$output = $crud->render();
 			
